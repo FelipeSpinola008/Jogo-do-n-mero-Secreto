@@ -1,12 +1,12 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 100;
+let numeroLimite = 1000;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese male', {rate:1.2});
+    responsiveVoice.speak(texto, 'Brazilian Portuguese famale', {rate:1.2});
 }
 
 function exibirMensagemInicial() {
