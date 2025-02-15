@@ -1,8 +1,9 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 100;
+let numeroLimite = 1000; //define o valor máximo do número secreto
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
+// exibe os textos na tela e narra cada texto escrito.
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -17,6 +18,7 @@ function exibirMensagemInicial() {
 
 exibirMensagemInicial();
 
+// a função Verificar Chute serve para verificar se o número que foi digitado no campo 'input' é igual, maior ou menor que o numeroSecreto
 function verificarChute() {
     let chute = document.querySelector('input').value;
     
@@ -26,18 +28,19 @@ function verificarChute() {
         let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!
         Clique em novo jogo para jogar novamente`;
         exibirTextoNaTela('p', mensagemTentativas);
-        document.getElementById('reiniciar').removeAttribute('disabled');
+        document.getElementById('reiniciar').removeAttribute('disabled'); //ativa o botão 'NOVO JOGO'
     } else {
         if (chute > numeroSecreto) {
-            exibirTextoNaTela('p', 'O número secreto é menor');
+            exibirTextoNaTela('p', `O número secreto é menor que ${chute}`);
         } else {
-            exibirTextoNaTela('p', 'O número secreto é maior');
+            exibirTextoNaTela('p', `O número secreto é maior que ${chute}`);
         }
         tentativas++;
         limparCampo();
     }
 }
 
+// Esta é a função que gera o número secreto.
 function gerarNumeroAleatorio() {
     let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
@@ -53,12 +56,13 @@ function gerarNumeroAleatorio() {
         return numeroEscolhido;
     }
 }
-
+// a função que limpa o 'input' quando clicar em "Chute" se você errar o valor do número secreto.
 function limparCampo() {
     chute = document.querySelector('input');
     chute.value = '';
 }
 
+// essa função faz com que o botão "NOVO JOGO" reinicie o jogo e desative o botão depois de clicado nele.
 function reiniciarJogo() {
     numeroSecreto = gerarNumeroAleatorio();
     limparCampo();
