@@ -2,6 +2,8 @@ let listaDeNumerosSorteados = [];
 let numeroLimite = 500; //define o valor máximo do número secreto
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
+let textoNegrito = document.querySelector('span')
+console.log(numeroSecreto);
 
 // exibe os textos na tela e narra cada texto escrito.
 function exibirTextoNaTela(tag, texto) {
@@ -11,7 +13,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextoNaTela('h1', 'Jogo do número secreto');
+    exibirTextoNaTela('h1', `Ajude o Tails a descobrir o número secreto!`);
     exibirTextoNaTela('p', `Escolha um número entre 1 e ${numeroLimite}`);
     responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
@@ -68,9 +70,8 @@ function reiniciarJogo() {
     limparCampo();
     tentativas = 1;
     exibirMensagemInicial();
-    document.getElementById('reiniciar').setAttribute('disabled', true)
+    document.getElementById('reiniciar').setAttribute('disabled', true);
 }
-
 
 
 
