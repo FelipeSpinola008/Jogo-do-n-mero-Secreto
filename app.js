@@ -2,7 +2,6 @@ let listaDeNumerosSorteados = [];
 let numeroLimite = 500; //define o valor máximo do número secreto
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
-let textoNegrito = document.querySelector('span')
 console.log(numeroSecreto);
 
 // exibe os textos na tela e narra cada texto escrito.
