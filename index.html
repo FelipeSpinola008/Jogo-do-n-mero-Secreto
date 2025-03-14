@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Fs Número Secreto</title>
+    <title>Número Secreto</title>
+    <link rel="icon" href="img/icon.png">
 </head>
-
-<body>
-
-    <div class="container">
-        <div class="container__conteudo">
-            <div class="container__informacoes">
-                <div class="container__texto">
-                    <h1>Adivinhe o <span id="" class="container__texto-azul">numero secreto</span></h1>
-                    <p class="texto__paragrafo">Escolha um número entre 1 a 10</p>
-                </div>
-                <input type="number" min="1" max="10" class="container__input">
-                <div class="chute container__botoes">
-                    <button onclick="verificarChute()" class="container__botao">Chutar</button>
-                    <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
-                </div>
+<body background="/img/imagem de fundo.png" >
+    <main class="conteudo">
+        <section class="conteudo__secao">   
+            <div class="conteudo__secao__texto">
+                <h1 class="conteudo__secao__texto__titulo">Adivinhe o <span class="conteudo__secao__texto__texto-formatado">numero secreto</span></h1>
+                <p class="conteudo__secao__texto__paragrafo">Escolha um número entre 1 a 10</p>
             </div>
-            <img src="./img/Tailes inspiração.png" alt="imagem inspirada em tailes do sonic" width="558px" height="625">
-        </div>
-    </div>
+            <input class="conteudo__secao__input" type="number" min="1" max="10">
+            <div class="conteudo__secao__botoes">
+                <button onclick="verificarChute()" class="conteudo__secao__botoes__botao">Chutar</button>
+                <button onclick="reiniciarJogo()" id="reiniciar" class="conteudo__secao__botoes__botao" disabled>Novo jogo</button>
+            </div>
+        </section>    
+        <img class="conteudo__img" src="/img/Tailes inspiração.png" alt="imagens inspirada em tails do sonic">
+    </main>
     <script src="app.js" defer></script>
 </body>
-
 </html>
