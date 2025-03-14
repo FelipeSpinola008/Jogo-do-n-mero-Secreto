@@ -7,7 +7,7 @@ ajudar o tails a descobrir qual o número que ele está procurando.
 para jogar, é fácil só precisa clicar na imagem abaixo  e então "chutar" um número entre 1 e 500.
 
 
- <a href="https://jogonumeros-five.vercel.app/"><img src="https://github.com/FelipeSpinola008/Jogo-do-n-mero-Secreto/blob/4d56af69ac47ca1d5eb12143138bfd3ca6ad2fc8/Jogo%20do%20n%C3%BAmero%20secreto%20screenshot.png"></a>
+ <a href="https://jogonumeros-five.vercel.app/"><img src="https://github.com/FelipeSpinola008/Jogo-do-n-mero-Secreto/blob/60ed0fdcdf3427b82b479b43868292aac1087f2f/Jogo%20do%20n%C3%BAmero%20secreto%20screenshot2.png"></a>
  
 
 ## Técnologias usadas:
