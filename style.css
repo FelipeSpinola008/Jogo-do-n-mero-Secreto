@@ -73,3 +73,45 @@ button:disabled {
     height: 39rem;
     margin-left: -50px;
 }
+
+@media (max-width: 1100px){
+    body {
+        background-size: auto;
+        align-items: center;
+        background-position: center;
+    }
+    .conteudo {
+        padding: 0  0 0 0;
+        align-items: center;
+        flex-direction: column-reverse;
+        
+    }
+    .conteudo__secao {
+        width: 50%;
+        height: 35%;
+        gap: 0.1rem;
+    }
+    .conteudo__secao__texto__titulo{
+        font-size: 2rem;
+
+    }
+    .conteudo__secao__texto__paragrafo {
+        font-size: 100%;
+    }
+    .conteudo__secao__botoes {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+    .conteudo__secao__botoes__botao {
+        width: 100%;
+    }
+    .conteudo__secao__input {
+        width: 100%;
+    }
+    .conteudo__img {
+        width: 30%;
+        height: 35%;
+    }
+}
+    
